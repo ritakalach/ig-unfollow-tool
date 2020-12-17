@@ -1,2 +1,2 @@
-# ig-unfollow-tool
-Instagram unfollow tool.
+# Instagram Unfollow Tool
+Automatically unfollow accounts that don't follow you back on Instagram.
