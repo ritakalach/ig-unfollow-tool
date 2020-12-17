@@ -12,9 +12,9 @@ class InstaBot:
 		home_page = HomePage(self.browser)
 		home_page.login(username, password)
 
-	def unfollow(self):
+	def unfollow(self, username):
 		# Go to your Instagram profile page
-		self.browser.get("https://www.instagram.com/thegentlegoose/")
+		self.browser.get("https://www.instagram.com/{}/".format(username))
 		sleep(5)
 
 		# Get the usernames of all your followers
@@ -142,4 +142,4 @@ username = ""
 password = ""
 
 my_insta_bot = InstaBot(username, password)
-my_insta_bot.unfollow()
+my_insta_bot.unfollow(username)
