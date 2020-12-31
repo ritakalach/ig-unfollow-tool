@@ -1,6 +1,9 @@
 # Instagram Unfollow Tool
 Automatically unfollow accounts that don't follow you back on Instagram with Selenium Python 🐍.
 
+## Motivation
+I have an Instagram account for my goose and duck photos 🦆. When another birder follows me, I feel that I must follow them back (supporting other birdwatchers and homesteaders feels like the polite thing to do). But some of these accounts are run by bots. They follow me, I follow them back, and then they unfollow me. It's not a huge problem, but I don't really like having a lengthy Instagram feed filled with content by users who don't interact with their followers. That's why I developed a tool to unfollow accounts that don't follow me back. As a result, I'm only following people who interact with my content and I interact with theirs. It makes me feel like I'm part of a little birdwatching community (yes, I know how dorky that sounds and my real-life friends tease me about it all the time). 
+
 ## Running the code
 You must have Python 3 and [Selenium](https://selenium-python.readthedocs.io) installed on your computer. I used Firefox as my chosen browser, which also requires geckodriver.
 
