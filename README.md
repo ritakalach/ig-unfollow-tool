@@ -19,3 +19,5 @@ Here's what you'll see on screen as the code runs:
 What you'll see in your terminal:
 
 <img src="media/terminal.png" width = 500> 
+
+Ok, not all of the accounts I just unfollowed are run by bots. Regardless, I like having a smaller Instagram feed. I recommend creating an exception list for those accounts that you want to follow regardless of whether they follow you back. 
