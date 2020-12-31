@@ -31,7 +31,7 @@ class InstaBot:
 		# Unfollow accounts that aren't following you
 		num_of_accounts_unfollowed, accounts_unfollowed = self.compare_to_following_and_unfollow(followers)
 		# The number of accounts unfollowed is rounded if you have lots of followers
-		# E.g., if you have 20,426 followers, Instagram will say you have 20.4K followers
+		# E.g., if you have 20,426 followers Instagram will say you have 20.4K followers
 		# and that's why the calculation will be rounded as well
 		print("You've unfollowed {} accounts.".format(num_of_accounts_unfollowed))
 		sleep(5)
