@@ -2,7 +2,7 @@
 Automatically unfollow accounts that don't follow you back on Instagram with Selenium Python 🐍.
 
 ## Running the code
-You must have Python 3 and [Selenium Python](https://selenium-python.readthedocs.io) installed on your computer. I used Firefox as my chosen browser, which also requires geckodriver.
+You must have Python 3 and [Selenium](https://selenium-python.readthedocs.io) installed on your computer. I used Firefox as my chosen browser, which also requires geckodriver.
 
 1) Download [ig_unfollow_tool.py](ig_unfollow_tool.py)
 2) Update lines 189-190 with your account credentials 
