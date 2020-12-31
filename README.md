@@ -1,5 +1,5 @@
 # Instagram Unfollow Tool
-Automatically unfollow accounts that don't follow you back on Instagram. 
+Automatically unfollow accounts that don't follow you back on Instagram with Selenium Python 🐍.
 
 ## Running the code
 You must have Firefox, Python 3, and Selenium Python installed on your computer. 
