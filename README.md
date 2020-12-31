@@ -13,4 +13,4 @@ Here's what you'll see on screen as the code runs:
 
 And in your terminal:
 
-<img src="media/command_line.png" width = 500> 
+<img src="media/terminal.png" width = 500> 
