@@ -16,6 +16,6 @@ Here's what you'll see on screen as the code runs:
 <img src="media/login_and_get_followers.gif" width = 500> 
 <img src="media/unfollow.gif" width = 500> 
 
-What you'll see in your terminal:
+What you'll see in the terminal:
 
 <img src="media/terminal.png" width = 500> 
