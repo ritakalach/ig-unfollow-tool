@@ -142,7 +142,7 @@ class InstaBot:
 
 		for i in range(int(num_following_before), 0, -1):
 			following = self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/ul/div/li[{}]/div/div[1]/div[2]/div[1]/span/a".format(i))
-			following_username = following.get_attribute("title")		
+			following_username = following.get_attribute("title")
 			if following_username not in followers:
 				# Unfollow account
 				following_user_button = self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/ul/div/li[{}]/div/div[2]/button".format(i))
@@ -180,4 +180,4 @@ username = ""
 password = ""
 
 my_insta_bot = InstaBot(username, password)
-my_insta_bot.unfollow(username)
+my_insta_bot.unfollow()
