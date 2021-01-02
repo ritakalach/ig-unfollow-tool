@@ -31,7 +31,7 @@ class InstaBot:
 		# Unfollow accounts that aren't following you
 		num_of_accounts_unfollowed, accounts_unfollowed = self.compare_to_following_and_unfollow(followers)
 		# The number of accounts unfollowed is rounded if you have lots of followers
-		# E.g., if you have 20,426 followers Instagram will say you have 20.4K followers
+		# E.g., if you have 20,426 followers, Instagram will say you have 20.4K followers
 		# and that's why the calculation will be rounded as well
 		print("You've unfollowed {} accounts.".format(num_of_accounts_unfollowed))
 		sleep(5)
@@ -42,7 +42,7 @@ class InstaBot:
 		# Store the usernames of accounts you've unfollowed 
 		new_file = open('accounts_unfollowed.txt', 'w')
 		for account_unfollowed in accounts_unfollowed:
-			new_file.write(account_unfollowed + ", ")
+			new_file.write(account_unfollowed + "\n")
 		new_file.close()
 
 		return
@@ -141,17 +141,7 @@ class InstaBot:
 		accounts_unfollowed = set()
 
 		for i in range(int(num_following_before), 0, -1):
-			try:
-				following = self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/ul/div/li[{}]/div/div[1]/div[2]/div[1]/span/a".format(i))
-			except:
-				# Sometimes information about a user will popup, obscuring the unfollow button
-				# In this case, move the cursor and the popup will disappear
-				action = ActionChains(self.browser) 
-				action.move_by_offset(1000, 1000) 
-				action.perform() 
-				sleep(5)
-				following = self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/ul/div/li[{}]/div/div[1]/div[2]/div[1]/span/a".format(i))
-
+			following = self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[2]/ul/div/li[{}]/div/div[1]/div[2]/div[1]/span/a".format(i))
 			following_username = following.get_attribute("title")		
 			if following_username not in followers:
 				# Unfollow account
@@ -159,7 +149,7 @@ class InstaBot:
 				following_user_button.click()
 				sleep(1)
 				unfollow_user_button = self.browser.find_element_by_xpath("/html/body/div[6]/div/div/div/div[3]/button[1]")
-				unfollow_user_button.click()
+				self.browser.execute_script("arguments[0].click();", unfollow_user_button)
 				sleep(1)
 				accounts_unfollowed.add(following_username)
 				print("You've unfollowed {}.".format(following_username))
